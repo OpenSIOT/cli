@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1540310430 source:e:\projects\openiot\cli\main.cpp
+	<iostream>
+	"args.hxx"
+
+1540310173 e:\projects\openiot\cli\args.hxx
+	<algorithm>
+	<iterator>
+	<exception>
+	<functional>
+	<sstream>
+	<string>
+	<tuple>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+	<type_traits>
+
