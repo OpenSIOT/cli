@@ -1,7 +1,10 @@
 # depslib dependency file v1.0
-1540310430 source:e:\projects\openiot\cli\main.cpp
+1540317107 source:e:\projects\openiot\cli\main.cpp
 	<iostream>
+	<stdlib.h>
+	<time.h>
 	"args.hxx"
+	"logos.hxx"
 
 1540310173 e:\projects\openiot\cli\args.hxx
 	<algorithm>
@@ -15,4 +18,6 @@
 	<unordered_map>
 	<unordered_set>
 	<type_traits>
+
+1540316542 e:\projects\openiot\cli\logos.hxx
 

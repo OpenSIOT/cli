@@ -1,10 +1,14 @@
 #include <iostream>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 #include "args.hxx"
 
 using namespace std;
 
+#include "logos.hxx"
+
 int ParseArguments(int argc, char **argv) {
-    args::ArgumentParser parser("This is a test program.", "This goes after the options.");
+    args::ArgumentParser parser("Welcome to the OpenIOT CLI. Visit our website at https://www.openiot.com for great DIY projects, hackathons and many resources");
     args::HelpFlag help(parser, "help", "Display this help menu", {'h', "help"});
     args::CompletionFlag completion(parser, {"complete"});
     try
@@ -32,6 +36,10 @@ int ParseArguments(int argc, char **argv) {
 
 int main(int argc, char **argv)
 {
+    /* generate logo  */
+    srand (time(NULL));
+    int iLogo = rand() % 12;
+    cout << logos[iLogo] << endl;
     if( ParseArguments(argc, argv) )
         cout << "Hello world!" << endl;
     return 0;
